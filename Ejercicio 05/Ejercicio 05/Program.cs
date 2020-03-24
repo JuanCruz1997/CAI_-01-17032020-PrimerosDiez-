@@ -20,9 +20,10 @@ namespace Ejercicio_05
                 nroIngresado = Console.ReadLine();
                 if (!int.TryParse(nroIngresado, out comprobacion))
                 {
+                    nroIngresado = "b";
                     Console.WriteLine("Error. No se ingresó un número.");
                 }
-            } while (!int.TryParse(nroIngresado, out comprobacion));
+            } while (nroIngresado=="b");
             foreach(char letra in nroIngresado)
             {
                 cadenaInvertida = letra + cadenaInvertida;
